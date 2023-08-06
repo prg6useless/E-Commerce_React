@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import { Navbar, Products } from "./components";
+import { Navbar, Products,Cart } from "./components";
 import { commerce } from "./lib/commerce";
 
-const App = () => {
+export default function App () {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
 
@@ -28,14 +28,14 @@ const App = () => {
     fetchCart();
   }, []);
 
-  console.log(cart);
+  // console.log(cart.line_items.length);
 
   return (
     <>
       <Navbar totalItems={cart.total_items} />
-      <Products products={products} onAddToCart={handleAddToCart} />
+      {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
+      <Cart cart={cart} />
     </>
   );
 };
 
-export default App;
