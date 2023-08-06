@@ -2,9 +2,15 @@
 
 An E-commerce Website built using React, CommerceJS and Stripe
 
-Create a lib folder inside src and create a commerce.js file inside it.
+All the backend is handled by CommerceJS
 
-Create .env file with the following code:
+To learn more about CommerceJS : https://commercejs.com/
+
+Create a lib folder inside the src folder and create a commerce.js file inside it. 
+
+src/lib/commerce.js
+
+Create a .env file in the root directory with the following code:
 
     REACT_APP_CHEC_PUBLIC_KEY = your commerceJS API key
 
