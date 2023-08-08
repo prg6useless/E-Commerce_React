@@ -5,11 +5,13 @@ An E-commerce Website built using React, CommerceJS and Stripe
 All the backend is handled by CommerceJS and all of the payment process is handled by Stripe
 
 To learn more about CommerceJS : https://commercejs.com/
+
 To learn more about Stripe : https://stripe.com/
 
 Create a lib folder inside the src folder and create a commerce.js and stripe.js file inside it.
 
 src/lib/commerce.js
+
 src/lib/stripe.js
 
 Create a .env file in the root directory with the following code:
