@@ -25,4 +25,4 @@ dist-ssr
 
 .env
 
-src/lib/commerce.js
+src/lib/
